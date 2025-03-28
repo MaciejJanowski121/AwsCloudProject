@@ -1,0 +1,122 @@
+/* Stylizacja kontenera rejestracji */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg, #f6d365, #fda085);
+}
+
+.register-container {
+    background: white;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+.register-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Form input */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Stylizacja przycisku rejestracji */
+.register-button {
+    width: 100%;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.register-button:hover {
+    background: #0056b3;
+}
+
+/* Przycisk powrotu */
+.register-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-button, .home-button {
+    flex: 1;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.back-button {
+    background: #ff4b5c;
+    color: white;
+    margin-right: 10px;
+}
+
+.home-button {
+    background: #28a745;
+    color: white;
+}
+
+.back-button:hover {
+    background: #d32f2f;
+    transform: scale(1.05);
+}
+
+.home-button:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+
+/* Responsywność */
+@media (max-width: 400px) {
+    .register-container {
+        width: 90%;
+    }
+
+    .register-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .back-button, .home-button {
+        flex: none;
+        width: 100%;
+    }
+}
